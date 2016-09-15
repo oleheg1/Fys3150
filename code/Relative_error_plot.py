@@ -28,4 +28,4 @@ ylabel('Relative error')
 title('Fin Figur')
 
 
-savefig("relative_Error.pdf")
+savefig("Relative_Error.pdf")
