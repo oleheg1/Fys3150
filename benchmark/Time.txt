@@ -1,3 +1,0 @@
-For 10^1:
-Time specalized algorithm:     0
-Time for the Thomas algorithm: 0
