@@ -1,0 +1,18 @@
+For 10^1:
+Time specalized algorithm:     0
+Time for the Thomas algorithm: 0
+For 10^2:
+Time specalized algorithm:     0
+Time for the Thomas algorithm: 0
+For 10^3:
+Time specalized algorithm:     0
+Time for the Thomas algorithm: 0
+For 10^4:
+Time specalized algorithm:     0
+Time for the Thomas algorithm: 0
+For 10^5:
+Time specalized algorithm:     0.01
+Time for the Thomas algorithm: 0.01
+For 10^6:
+Time specalized algorithm:     0
+Time for the Thomas algorithm: 0.02

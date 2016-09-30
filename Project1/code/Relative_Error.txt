@@ -1,0 +1,5 @@
+Maximum error for n = 10 is 0.0661153372855
+Maximum error for n = 100 is 0.000816513121754
+Maximum error for n = 1000 is 8.31665048253e-06
+Maximum error for n = 10000 is 8.33134065436e-08
+Maximum error for n = 100000 is 1.43558189585e-09

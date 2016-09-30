@@ -1,0 +1,8 @@
+Lamda for wr = 0.01 without interaction: 0.487921
+Lamda for wr = 0.01 with interaction: 0.986314
+Lamda for wr = 0.5 without interaction: 1.50226
+Lamda for wr = 0.5 with interaction: 2.23587
+Lamda for wr = 1 without interaction: 2.99938
+Lamda for wr = 1 with interaction: 4.05723
+Lamda for wr = 5 without interaction: 14.9845
+Lamda for wr = 5 with interaction: 17.4324
