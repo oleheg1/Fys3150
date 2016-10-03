@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+
 import matplotlib as mpl
 mpl.use("pgf")
 pgf_with_pdflatex = {
@@ -14,7 +15,9 @@ pgf_with_pdflatex = {
          ]
 }
 mpl.rcParams.update(pgf_with_pdflatex)
-mpl.rcParams['axes.color_cycle'] = ['b', '#800080', '#009900', '#964B00', '#d30704' ,'#ff6100']
+mpl.rcParams['axes.color_cycle'] = ['k', 'k', '#009900', '#964B00', '#d30704' ,'#ff6100']
+
+
 import matplotlib.pyplot as plt
 
 text_file = open("RandMatData.txt","r")
@@ -32,13 +35,12 @@ for line in lines:
 text_file.close()
 
 
-
-plt.figure(figsize=(4,3))
-plt.plot(n[:],itr[:])
-plt.title(ur"Complexity, Schrödinger equation", fontsize=11)
-plt.ylabel(r"Iterations")
+plt.figure(figsize=(4*0.8,3*0.8))
+plt.scatter(r(n[:],itr[:],facecolors='none', edgecolors='k',s = 3,linewidth=0.4)
+plt.title(ur"Complexity, any matrix", fontsize=11)
+plt.ylabel(r"Num iterations")
 plt.xlabel(r"Matrix dimension, $n$")
 plt.tight_layout(.5)
 plt.ticklabel_format(style="sci",axis= "y",scilimits = (-2,2))
-plt.savefig("iterations_vs_matrix_dim.png")
-plt.savefig("iterations_vs_matrix_dim.pgf")
+plt.savefig("iterations_vs_matrix_dim_any_matrix.png")
+plt.savefig("iterations_vs_matrix_dim_any_matrix.pgf")

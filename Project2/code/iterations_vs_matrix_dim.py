@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-"""
+
 import matplotlib as mpl
 mpl.use("pgf")
 pgf_with_pdflatex = {
@@ -15,8 +15,7 @@ pgf_with_pdflatex = {
          ]
 }
 mpl.rcParams.update(pgf_with_pdflatex)
-mpl.rcParams['axes.color_cycle'] = ['b', '#800080', '#009900', '#964B00', '#d30704' ,'#ff6100']
-"""
+mpl.rcParams['axes.color_cycle'] = ['k', '#800080', '#009900', '#964B00', '#d30704' ,'#ff6100']
 import matplotlib.pyplot as plt
 
 text_file = open("iterations_vs_matrix_dim.txt","r")
@@ -35,12 +34,13 @@ text_file.close()
 
 
 
-plt.figure(figsize=(4,3))
+plt.figure(figsize=(4*0.8,3*0.8))
 plt.plot(n[:],itr[:])
 plt.title(ur"Complexity, Schrödinger equation", fontsize=11)
-plt.ylabel(r"Iterations")
+plt.ylabel(r"Num iterations")
 plt.xlabel(r"Matrix dimension, $n$")
+plt.ylim(0,5e4)
 plt.tight_layout(.5)
 plt.ticklabel_format(style="sci",axis= "y",scilimits = (-2,2))
-plt.savefig("iterations_vs_matrix_dim.png")
-#plt.savefig("iterations_vs_matrix_dim.pgf")
+plt.savefig("Niterations_vs_matrix_dim.png")
+plt.savefig("Niterations_vs_matrix_dim.pgf")
